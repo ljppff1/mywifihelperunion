@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+        android:id="@+id/ldld"
+        >
+            <ProgressBar 
+                android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        />
+            
+    <Button 
+        android:layout_width="fill_parent"
+        android:text="生成视频"
+        android:id="@+id/mBtmakevideo"
+        android:layout_height="wrap_content"
+        />
+            
+        
+    </LinearLayout>
+    
+           <GridView 
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_above="@id/ldld"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:horizontalSpacing="6dip"
+    android:numColumns="4"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="6dip"
+    android:padding="4dip" 
+        ></GridView>
+    
+    
+</RelativeLayout>

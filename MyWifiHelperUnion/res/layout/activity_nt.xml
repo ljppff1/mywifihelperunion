@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+ <TextView 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="show"
+     android:id="@+id/show"
+     />
+  <Button 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="30dp"
+      android:text="接收文件"
+      android:id="@+id/receiver"
+      />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/file_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        
+        />
+
+     <LinearLayout
+           android:layout_weight="4"
+                   android:layout_width="0dp"
+           
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5dip"
+         android:orientation="vertical" >
+
+              <TextView
+                  android:id="@+id/file_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" 
+                  android:text="UCDownloads" 
+                  />
+
+               <TextView
+                   android:id="@+id/file_time"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="12dip" 
+                   android:textColor="#838B8B"
+                   android:text="2013-9-6 21:24"
+                  />
+              </LinearLayout>
+         <CheckBox 
+             android:id="@+id/file_check"
+             android:focusable="false"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+             android:layout_height="wrap_content" 
+             />     
+</LinearLayout>

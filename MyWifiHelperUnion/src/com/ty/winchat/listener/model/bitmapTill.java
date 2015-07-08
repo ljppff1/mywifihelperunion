@@ -1,0 +1,1 @@
+package com.ty.winchat.listener.model;import android.graphics.Bitmap;public class bitmapTill {     public String getIp() {		return Ip;	}	public void setIp(String ip) {		Ip = ip;	}	public Bitmap getBitmap() {		return bitmap;	}	public void setBitmap(Bitmap bitmap) {		this.bitmap = bitmap;	}	private String Ip;     private Bitmap bitmap;     }

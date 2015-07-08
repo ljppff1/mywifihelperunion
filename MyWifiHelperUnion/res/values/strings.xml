@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shot360</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_view">MainViewActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_new_option">NewOptionActivity</string>
+    <string name="title_activity_my_wifi">MyWifiActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_set_options">SetOptionsActivity</string>
+    <string name="title_activity_nt">NTActivity</string>
+    <string name="title_activity_file_list">FileListActivity</string>
+    <string name="title_activity_send_file">SendFileActivity</string>
+    <string name="title_activity_connect_ap">ConnectApActivity</string>
+    <string name="about">1.使用发文件功能可以在连接到同一局域网wifi的情况下互相发送文件，可以发送多个文件。
+                         2.可以自己建立wifi热点，与连接到该热点的人互相发送文件
+                         3.设置页面可以更改名字等
+                         4.wifi热点的用户名和密码可设置更改，默认是WIFIHelper_abc qzx7998888</string>
+</resources>

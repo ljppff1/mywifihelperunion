@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >  
+    
+    <include layout="@layout/head"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+               android:visibility="gone"
+        
+        android:id="@+id/mLLView1"
+        >
+             <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview1"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview2"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+             <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview3"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview4"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     
+    </LinearLayout>
+    
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mLLView2"
+               android:visibility="gone"
+        
+        >
+             <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview5"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview6"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+             <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview7"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     <com.ty.winchat.widget.VideoView
+        android:id="@+id/video_chat_myview8"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        />
+     
+    </LinearLayout>
+    
+   <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+       
+       >
+     
+     <Button 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="生成视频"
+         android:id="@+id/mBtOverVideo"
+         android:layout_alignParentBottom="true"
+         />
+                 <ProgressBar 
+                android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:padding="5dp"
+          android:layout_above="@id/mBtOverVideo"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        />
+     
+         <GridView 
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_above="@id/mBtOverVideo"
+    android:layout_marginTop="10dp"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:horizontalSpacing="6dip"
+    android:numColumns="4"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="6dip"
+    android:padding="4dip" 
+        ></GridView>
+       
+     </RelativeLayout>
+  
+</LinearLayout>

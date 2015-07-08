@@ -1,0 +1,10 @@
+package com.ty.winchat.listener;
+
+import java.io.IOException;
+
+public abstract class Listener extends Thread{
+	/**´ò¿ª¼àÌýÆ÷*/
+	abstract void open() throws IOException;
+	/**¹Ø±Õ¼àÌýÆ÷*/
+	abstract void close() throws IOException;
+}

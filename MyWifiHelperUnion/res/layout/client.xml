@@ -1,0 +1,100 @@
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTvclient"
+        />
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_height="fill_parent" >
+
+      <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开启服务，连接服务端"
+        android:visibility="gone"
+        android:id="@+id/startClient"
+        
+        />
+       <Button 
+           android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开启服务端，连客户端的。"
+        android:id="@+id/startService"
+        />
+      
+     
+       <EditText 
+           android:paddingTop="30dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/mEtsend"
+           
+           />
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+           >
+       <Button 
+              
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="发送到服务端"
+           android:id="@+id/mBtnSend"
+           android:layout_alignParentRight="true"
+           android:gravity="center"
+           />
+       </RelativeLayout>
+       
+              <EditText 
+           android:paddingTop="30dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/mEtsend1"
+           
+           />
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+           >
+       <Button 
+              
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="发送到客户端"
+           android:id="@+id/mBtnSend1"
+           android:layout_alignParentRight="true"
+           android:gravity="center"
+           />
+       </RelativeLayout>
+       
+              <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+           >
+       <Button 
+              
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="向服务端传送文件"
+           android:id="@+id/mBtnSend2"
+           android:layout_alignParentRight="true"
+           android:gravity="center"
+           />
+       </RelativeLayout>
+       
+       
+       
+</LinearLayout>
+</RelativeLayout>

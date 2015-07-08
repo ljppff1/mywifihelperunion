@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ProgressBar
+       android:id="@+id/bar"
+       style="@android:style/Widget.ProgressBar.Horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:max="100" />
+<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="WIFI设置"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			<Switch  
+            			     android:layout_marginTop="5dip"
+            			     android:layout_marginLeft="210dip"
+                             android:id="@+id/switch_test"  
+                             android:layout_width="wrap_content"  
+                             android:layout_height="wrap_content" />
+            							
+      				</RelativeLayout>
+      				<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="在线列表"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<Button 
+            			    android:layout_marginLeft="210dip"
+            			    android:layout_marginTop="3dip"
+            			    android:id="@+id/buttonx"
+            			    android:layout_width="wrap_content" 
+        					android:layout_height="30dip"
+        					android:text="刷新"
+        		            android:textColor="#FFFFFF"
+        		            android:background="@drawable/new_wifi"/>     					
+      				</RelativeLayout>
+   <com.example.listview.MyListView
+       android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/app_list_corner_border"
+        android:cacheColorHint="#00000000">
+       ></com.example.listview.MyListView>
+
+   
+   
+</LinearLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开启服务与客户端通信"
+        android:id="@+id/startService"
+        />
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭服务"
+        android:id="@+id/startService1"
+        />
+   <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开启照相机"
+        android:id="@+id/startSetOptions"
+        />
+ 
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:id="@+id/mBtnCamera"
+        />
+        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开启文件服务"
+        android:id="@+id/mBtnInvFilea"
+        />
+        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭文件服务"
+        android:id="@+id/mBtnInvFilea1"
+        />
+        
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="收文件"
+        android:id="@+id/mBtnInvFile"
+        />
+        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="预览"
+        android:id="@+id/startSee"
+        />
+    
+        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="合成视频"
+        android:id="@+id/mBtnInvVideo"
+        />        <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭照相机"
+        android:id="@+id/mBtnInvCloseCamera"
+        />
+        
+    
+</LinearLayout>

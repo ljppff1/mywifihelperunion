@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mEtmain1"
+        
+        />
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+   
+    	<Button
+	        android:id="@+id/set_icon_btn"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:layout_centerVertical="true"
+	        android:text="选择"
+	        android:visibility="gone"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+	     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+   
+    	<Button
+	        android:id="@+id/set_icon_btn1"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:layout_centerVertical="true"
+	        android:text="客户端"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+          <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        >
+   
+    	<Button
+	        android:id="@+id/set_icon_btn2"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:layout_centerVertical="true"
+	        android:text="服务端"
+	        android:layout_marginLeft="10dip"
+	        />
+	</RelativeLayout>
+	     
+</LinearLayout>

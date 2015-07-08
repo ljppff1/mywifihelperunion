@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webdesign688.shot360"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wifi_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.mywifihelper.MainViewActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <activity android:name="com.ty.winchat.ui.VideoChatClient"></activity>
+        <activity android:name="com.ty.winchat.ui.VideoChatService"></activity>
+        <activity android:name="com.ty.winchat.videotest.SurfaceViewTestActivity"></activity>
+        
+        <activity
+            android:name="com.example.mywifihelper.NewActivity"
+            android:label="@string/title_activity_new" >
+        </activity>
+        <activity 
+            android:name="com.example.mywifihelper.SetIPActivity"
+            ></activity>
+        <activity 
+            android:name="com.example.mywifihelper.ReviewActivity"
+            ></activity>
+        <activity 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:name="com.example.mywifihelper.ListviewActivity"
+            ></activity>
+                <activity 
+            android:name="com.example.videotest.SurfaceViewTestActivity"
+            ></activity>
+        
+        <activity
+            android:name="com.example.mywifihelper.NewOptionActivity"
+            android:label="@string/title_activity_new_option" >
+        </activity>
+        <activity
+            android:name="com.example.mywifihelper.SetOptionsActivity"
+            android:label="@string/title_activity_set_options" >
+        </activity>
+        <activity 
+            android:name="com.example.mywifihelper.ClientActivity"
+            ></activity>
+        <activity 
+            android:name="com.example.mywifihelper.ServiceActivity"
+            ></activity>
+        <activity
+            android:name="com.example.mywifihelper.ReceiverActivity"
+            android:label="@string/title_activity_nt" >
+        </activity>
+        <activity
+            android:name="com.example.mywifihelper.SendFileActivity"
+            android:label="@string/title_activity_send_file" >
+        </activity>
+        <activity
+            android:name="com.example.mywifihelper.ConnectApActivity"
+            android:label="@string/title_activity_connect_ap" >
+        </activity>
+        <service android:name="com.example.service.ClientNetService" 
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="sljppff.service.ClientNetService" />
+            </intent-filter>
+        </service>
+         <!-- 一个全局的Socket连通的广播 -->
+        <receiver android:name="com.example.service.OperConnReceiver" >
+            <intent-filter>
+                <action android:name="cn.com.ljppff.server2.receiver.OperConnReceiver" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+        <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+</manifest>
